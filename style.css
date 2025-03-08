@@ -1,3 +1,8 @@
+html{
+  min-height: 100%;
+  display: grid;
+}
+
 .profile {
   border-radius: 125px;
   border: solid black 3px;
@@ -6,8 +11,9 @@
   h2 {
     font-size: 18px;
   }
-  
+
   body {
+    margin: auto;
     background-color: slateblue;
     font-family: 'Trebuchet MS';
     color: white;
