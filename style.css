@@ -30,4 +30,12 @@ html{
     text-align: center;
     margin: 10px;
     color: slateblue;
+    transition: 0.4s;
+  }
+
+  a:hover{
+   background-color: slateblue;
+   color: white;
+   border-color: black;
+   border: black solid;
   }
