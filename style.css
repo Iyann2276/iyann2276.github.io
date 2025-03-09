@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 html{
   min-height: 100%;
   display: grid;
@@ -34,45 +34,13 @@ html{
     transition: 0.4s;
   }
 
-  a:hover{
-   background-color: slateblue;
-   color: white;
-   border-color: black;
-   border: black solid;
-=======
-html{
-  min-height: 100%;
-  display: grid;
-}
-
-.profile {
-  border-radius: 125px;
-  border: solid black 3px;
-}
-
-  h2 {
-    font-size: 18px;
-  }
-
-  body {
-    margin: auto;
-    background-color: slateblue;
-    font-family: 'Trebuchet MS';
-    color: white;
-    text-align: center;
-  }
-  
-  a{
-    background-color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
-    margin: 10px;
-    color: slateblue;
+  .nama{
     transition: 0.4s;
+    padding: 1px;
+  }
+
+  .nama:hover{
+    transform: scale(1.2);
   }
 
   a:hover{
@@ -80,5 +48,4 @@ html{
    color: white;
    border-color: black;
    border: black solid;
->>>>>>> origin
   }
