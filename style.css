@@ -25,6 +25,7 @@ html{
     background-color: white;
     font-size: 20px;
     border-radius: 10px;
+    border: white solid;
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
@@ -33,7 +34,12 @@ html{
     color: slateblue;
     transition: 0.4s;
   }
-
+div{
+  line-height: 0%;
+  width: 100px;
+  display:inline-block;
+  cursor: pointer;
+}
   .nama{
     transition: 0.4s;
     padding: 1px;
