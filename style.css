@@ -1,57 +1,110 @@
 
-html{
-  min-height: 100%;
-  display: grid;
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0
 }
 
-.profile {
-  border-radius: 125px;
-  border: solid black 3px;
+body{
+  font-family: "Roboto", sans-serif;
 }
 
-  h2 {
-    font-size: 18px;
-  }
+html {
+  background-color: slateblue;
+}
 
-  body {
-    margin: auto;
-    background-color: slateblue;
-    font-family: 'Trebuchet MS';
-    color: white;
-    text-align: center;
-  }
-  
-  a{
-    background-color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    border: white solid;
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center;
-    margin: 10px;
-    color: slateblue;
-    transition: 0.4s;
-  }
+img{
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 div{
-  line-height: 0%;
-  width: 100px;
-  display:inline-block;
-  cursor: pointer;
+  display: block;
 }
-  .nama{
-    transition: 0.4s;
-    padding: 1px;
-  }
 
-  .nama:hover{
-    transform: scale(1.2);
-  }
+.main-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: transparent;
+}
 
-  a:hover{
-   background-color: slateblue;
-   color: white;
-   border-color: black;
-   border: black solid;
-  }
+.nav{
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: solid 2px ;
+}
+
+.nav, ul{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.gambarlogo{
+  height: 3rem;
+  border-radius: 125px;
+  border: solid 2px;
+  border-color: black;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+#home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 480px;
+}
+
+.home-kiri{
+  align-items: center;
+  
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--secondaryTextColor);
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.pre-title::before {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: black;
+  position: absolute;
+  display: block;
+  left: 0;
+ top: 50%;
+}
+
+.home-title{
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.home-kiri p{
+  text-align: justify;
+}
+
+.home-kanan{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-kanan img{
+  width: 90%;
+  border-radius: 50%;
+  border: solid 3px;
+}
