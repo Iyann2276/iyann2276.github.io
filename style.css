@@ -23,7 +23,7 @@ div{
 }
 
 .main-container{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 0 auto;
   background-color: transparent;
@@ -101,10 +101,12 @@ div{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10% 0 0;
 }
 
 .home-kanan img{
-  width: 90%;
+  max-height: 400px;
+  max-width: 90%;
   border-radius: 50%;
   border: solid 3px;
 }
