@@ -29,6 +29,45 @@ div{
   background-color: transparent;
 }
 
+.side-bar{
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.207);
+  backdrop-filter: blur(8px);
+  box-shadow: -20px 0 20px rgba(0, 0, 0, 0.244);
+  z-index: 999;
+}
+
+.side-bar ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.side-bar .xburgar{
+  align-items: flex-end;
+}
+
+.xburgar .line-1{
+  transform: rotate(-45deg) translate(-7px, 5px);
+}
+
+.xburgar .line-2{
+  opacity: 0;
+}
+
+.xburgar .line-3{
+  transform: rotate(45deg) translate(-7px, -5px);
+}
+
 .nav{
   justify-content: space-between;
   padding: 1rem 0;
@@ -53,7 +92,23 @@ div{
   align-items: center;
 }
 
+.logo-text{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bolder;
+  font-size: large;
+  margin-left: 1rem;
+}
+
 .burger{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: space-evenly;
+  cursor: pointer;
+}
+
+.xburgar{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,16 +117,23 @@ div{
   cursor: pointer;
 }
 
+.xburgar div{
+  background-color: black;
+  height: 2px;
+  width: 25px;
+  margin: 3px;
+}
+
+
 .burger div{
   background-color: black;
   height: 2px;
   width: 25px;
   margin: 3px;
-
 }
 
 section{
-  border: solid 2px;
+  /*border: solid 2px;*/
   margin: auto;
 }
 
@@ -133,7 +195,7 @@ section{
   border: solid 3px;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1050px){
   .home-kanan{
     order: -1;
   }
@@ -151,5 +213,12 @@ section{
   }
   .hide{
     display: none;
+  }
+  .logo-text{
+    display: flex;
+    gap: 0.5rem;
+  }
+  .burger{
+    display: flex;
   }
 }
