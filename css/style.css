@@ -13,6 +13,11 @@ html {
   background-color: slateblue;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 img{
   overflow-clip-margin: content-box;
   overflow: clip;
@@ -27,6 +32,12 @@ div{
   margin: 0 auto;
   padding: 0 auto;
   background-color: transparent;
+  padding-bottom: 2rem;
+  border-bottom: solid 2px;
+}
+
+li{
+  transition: 0.3s;
 }
 
 .side-bar{
@@ -38,7 +49,7 @@ div{
   right: 0;
   width: 300px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.207);
+  background-color: rgba(255, 255, 255, 0.499);
   backdrop-filter: blur(8px);
   box-shadow: -20px 0 20px rgba(0, 0, 0, 0.244);
   z-index: 999;
@@ -50,6 +61,7 @@ div{
   align-items: center;
   width: 100%;
   padding: 0;
+  cursor: pointer;
 }
 
 .side-bar .xburgar{
@@ -78,6 +90,7 @@ div{
   display: flex;
   list-style: none;
   gap: 3rem;
+  cursor: pointer;
 }
 
 .gambarlogo{
@@ -106,6 +119,7 @@ div{
   justify-content: center;
   align-content: space-evenly;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .xburgar{
@@ -115,6 +129,7 @@ div{
   justify-content: center;
   align-content: space-evenly;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .xburgar div{
@@ -137,7 +152,7 @@ section{
   margin: auto;
 }
 
-#home{
+#aboutme{
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -206,7 +221,7 @@ section{
   .home-kanan{
     order: -1;
   }
-  #home{
+  #aboutme{
     grid-template-columns: 1fr;
     height: fit-content;
   }

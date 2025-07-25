@@ -1,0 +1,8 @@
+.oc-container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: transparent;
+  padding-bottom: 2rem;
+  border-bottom: solid 2px;
+}
