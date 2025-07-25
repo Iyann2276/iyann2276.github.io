@@ -3,4 +3,52 @@
   margin: 0 auto;
   padding: 0 auto;
   background-color: transparent;
+  margin-bottom: 3rem;
+}
+
+.contacts-title{
+  margin-bottom: 4rem;
+}
+
+.most-active{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+.kontak{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 2rem;
+  min-width: 250px;
+  background-color: rgba(240, 248, 255, 0.373);
+  border-radius: 1.4rem;
+}
+
+.ikontak{
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  border-radius: 20%;
+  border: solid;
+}
+
+.visit{
+  border: solid black;
+  padding: 5px 80px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin: 2rem 0 0 ;
+  transition: 0.3s;
+}
+
+.visit:hover{
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
 }
