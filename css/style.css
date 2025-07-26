@@ -242,5 +242,6 @@ section{
   }
   .burger{
     display: flex;
+    position: fixed;
   }
 }

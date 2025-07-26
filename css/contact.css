@@ -52,3 +52,24 @@
   background-color: white;
   color: black;
 }
+
+.other{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem 0;
+  margin-bottom: 4rem;
+}
+
+@media(max-width: 1050px){
+  .other{
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .kontak{
+    scroll-snap-align: center;
+  }
+}
