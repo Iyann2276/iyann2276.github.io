@@ -97,7 +97,6 @@
   }
 
   .other-container .kontak{
-    scroll-snap-align: center;
     min-width: fit-content;
     padding: 5rem 1rem;
   }
