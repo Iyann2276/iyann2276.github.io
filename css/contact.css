@@ -67,6 +67,24 @@
   flex-wrap: wrap;
   gap: 2rem 0;
   margin-bottom: 4rem;
+  scroll-behavior: smooth;
+}
+
+.other::-webkit-scrollbar{
+  max-width: 5px;
+}
+
+.other::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.other::-webkit-scrollbar-thumb{
+  background: transparent;
+  border-radius: 10px;
+}
+
+.other::-webkit-scrollbar-thumb:hover{
+  background: black;
 }
 
 @media(max-width: 1050px){
@@ -78,13 +96,13 @@
     scroll-behavior: smooth;
   }
 
-  .kontak{
+  .other-container .kontak{
     scroll-snap-align: center;
     min-width: fit-content;
     padding: 5rem 1rem;
   }
 
-  .other-container{
+  .other-container, .contact-container{
     width: 100%;
   }
 }
